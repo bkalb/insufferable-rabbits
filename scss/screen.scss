@@ -1,0 +1,89 @@
+// fonts
+$alfa: "Alfa Slab One";
+$slabo: "Slabo 13px";
+
+// colors
+$bone: #D8C2A9;
+$beige: #A69887;
+$gray: #575752;
+$green: #778351;
+$blue: #CAEBF1;
+
+body {
+    font-family: $slabo;
+    font-size: 20px;
+    line-height: 1.5;
+    background: $blue;
+    color: $gray;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: $alfa;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+nav {
+    li {
+        &:hover {
+            background: $blue;
+        }
+    }
+    a {
+        color: $green;
+        &:hover {
+            color: $beige;
+            background: $blue;
+        }
+        &:active {
+            color: $bone;
+        }
+
+    }
+
+}
+
+.home .home-link,
+.sinister .sinister-link,
+.hildy .hildy-link,
+.faq .faq-link {
+    border-bottom: 6px solid $green;
+}
+
+.rap {
+    display: none;
+}
+
+.text-box {
+    background: lighten($bone, 5%);
+    padding: 0 20px 20px;
+    transition: all linear .5s;
+}
+
+.swap {
+    .bio {
+        display: none;
+    }
+    .rap {
+        display: block;
+    }
+    .text-box {
+        background: lighten($green, 30%);
+        transition: all linear .5s;
+    }
+}
+
+button {
+    display: block;
+    margin: auto;
+    background: darken($bone, 10%);
+    color: $gray;
+    border-radius: 10px;
+}
